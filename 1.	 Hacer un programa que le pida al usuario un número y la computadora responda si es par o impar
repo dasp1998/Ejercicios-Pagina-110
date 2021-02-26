@@ -1,0 +1,29 @@
+using System;
+
+namespace Programa_que_detecte_si_es_Par_o_Impar
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+
+            Console.Write("\t\t Te Gustaria saber si es un Numero Par o Impar");
+
+            Console.Write("\n\tIngrese un numero: ");
+            num = Int32.Parse(Console.ReadLine());
+
+            if (num % 2 == 0)
+            {
+                Console.Write("\n\n\tEl numero " + num + ".Genial!!! Es Numero PAR");
+            }
+            else
+            {
+                Console.Write("\n\n\tEl numero " + num + ". Lo Siento!!! Es numero Impar");
+            }
+
+            Console.Write("\n\n\tPresione < ENTER > para continuar . . .");
+            Console.ReadKey();
+
+        }
